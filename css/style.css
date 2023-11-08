@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* @font-face {
+  font-family: "Conv_pfdintextcondpro-medium"; //можно медиум не писать
+  src: url("../fonts/pfdintextcondpro-medium.eot");
+  src: local("☺"), url("../fonts/pfdintextcondpro-medium.woff") format("woff"),
+    url("../fonts/pfdintextcondpro-medium.ttf") format("truetype"),
+    url("../fonts/pfdintextcondpro-medium.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Conv_pfdintextcondpro-regular"; //можно регулар не писать, потом вставлять просто font-weight: 500;
+  src: url("../fonts/pfdintextcondpro-regular.eot");
+  src: local("☺"), url("../fonts/pfdintextcondpro-regular.woff") format("woff"),
+    url("../fonts/pfdintextcondpro-regular.ttf") format("truetype"),
+    url("../fonts/pfdintextcondpro-regular.svg") format("svg");
+  font-weight: 500;
+  font-style: normal; */
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #212828;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header {
+  background-image: url(../img/header/BG.png);
+}
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  margin-top: 32px;
+}
+.header__menu ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 55px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  margin-top: 32px;
+}
+.header__menu ul li:first-child {
+  padding-left: 327px;
+}
+.header__menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header__button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Kanit;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 6.88px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 7px 31px 8px 32px;
+  margin: 32px 0px 0px 32px;
+  border-radius: 100px;
+  border: 1px solid #6d7d7d;
+  background: rgba(255, 255, 255, 0);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+}/*# sourceMappingURL=style.css.map */

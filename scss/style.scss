@@ -1,0 +1,114 @@
+@import "_mynullstyle.scss";
+@import url("https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #212828;
+}
+.content {
+  flex: 1 1 auto;
+}
+.header {
+    background-image: url(../img/header/BG.png);
+  &__row {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding: 20px;
+    // background-color: #794f45;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-top: 32px;
+  }
+
+  &__menu {
+    ul li {
+      // padding-top: 13px;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-left: 55px;
+      padding-top: 8px;
+      padding-bottom: 9px;
+      margin-top: 32px;
+      &:first-child {
+        padding-left: 327px;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Nunito;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  &__list {
+  }
+
+  &__link {
+  }
+
+  &__button {
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: #fff;
+    // padding: 15px 32px;
+    text-align: center;
+    font-family: Kanit;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 6.88px;
+    display: inline-block;
+    font-size: 16px;
+    // margin-left: 52px;
+    padding: 7px 31px 8px 32px;
+    // padding-top: 7px;
+    // padding-bottom: 8px;
+    margin: 32px 0px 0px 32px;
+    border-radius: 100px;
+    border: 1px solid #6d7d7d;
+    background: rgba(255, 255, 255, 0);
+  }
+}
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+.about {
+}
+.footer {
+  &__row {
+  }
+
+  &__body {
+  }
+
+  &__copy {
+  }
+
+  &__menu {
+  }
+
+  &__list {
+  }
+
+  &__link {
+  }
+}

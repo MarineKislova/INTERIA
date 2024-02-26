@@ -7,20 +7,22 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: #212828;
+    background-color: #212828;
 }
 .content {
   flex: 1 1 auto;
 }
+
+/* ------- header ------- */
 .header {
-    background-image: url(../img/header/BG.png);
+  background-image: url(../img/header/BG.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 50%;
+  padding-bottom: 68px;
   &__row {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // align-items: center;
-    // padding: 20px;
-    // background-color: #794f45;
   }
 
   &__body {
@@ -86,24 +88,246 @@
     border: 1px solid #6d7d7d;
     background: rgba(255, 255, 255, 0);
   }
+  &__title {
+    h1 {
+      color: #fff;
+      font-family: Kanit;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 187px;
+      margin-left: 571px;
+    }
+    h3 {
+      color: #fff;
+      font-family: Nunito;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 19px;
+      margin-left: 571px;
+    }
+  }
+  &__text {
+    color: #fff;
+    font-family: Kanit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6.88px;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    margin-top: 136px;
+  }
 }
 .container {
   max-width: 1140px;
   margin: 0px auto;
+//   background-color: #212828;
 }
+
+/* ------- about ------- */
 .about {
+  margin-top: 100px;
+
+  &__row {
+  }
+
+  &__title {
+    h4 {
+      color: #6d7d7d;
+      font-family: Kanit;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 6.88px;
+    }
+    h2 {
+      color: #fff;
+      font-family: Kanit;
+      font-size: 40px;
+      font-weight: 400;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 19px;
+  }
+
+  &__body {
+    padding-top: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a b c . ." "a b c f g";
+    grid-column-gap: 32px;
+
+    &:nth-child(1) {
+      grid-area: a;
+    }
+    &:nth-child(2) {
+      grid-area: b;
+    }
+    &:nth-child(3) {
+      grid-area: c;
+    }
+    &:nth-child(4) {
+      grid-area: f;
+    }
+    &:nth-child(5) {
+      grid-area: g;
+    }
+  }
+
+  &__img-group1 {
+  }
+
+  &__img-group2 {
+  }
+
+  &__img-group3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img-text {
+    padding-top: 56px;
+    padding-bottom: 35px;
+
+    span {
+      color: #6d7d7d;
+      font-family: Kanit;
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    color: #fff;
+    font-family: Kanit;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 6.88px;
+  }
+
+  &__img-group4 {
+    display: flex;
+    align-items: end;
+  }
+
+  &__img-group5 {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__button {
+    margin-top: 240px;
+    border-radius: 100px;
+    border: 1px solid #6d7d7d;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    text-align: center;
+    font-family: Kanit;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 6.88px;
+  }
+
+  &__hireusnow {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    // justify-content: end;
+    background-image: url(../img/about/Mask_group.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-size: cover;
+    background-color: #6d7d7d;
+    border-radius: 50px 50px 0px 50px;
+    // background: #212828;
+    margin-top: 100px;
+    padding-top: 61px;
+    h2 {
+      color: #fff;
+      font-family: Kanit;
+      font-size: 40px;
+      font-weight: 400;
+    }
+  }
+
+  &__hireusnow-button {
+    border-radius: 100px;
+    border: 1px solid #6d7d7d;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    text-align: center;
+    font-family: Kanit;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 6.88px;
+    margin-top: 37px;
+    margin-bottom: 76px;
+  }
 }
+.container {
+}
+
+/* ------- team ------- */
+
+
+
+/* ------- footer ------- */
 .footer {
+  background-color: rgba(25, 29, 29, 1);
   &__row {
   }
 
   &__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__copy {
+    color: #fff;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 46px;
+    padding-bottom: 43px;
   }
 
   &__menu {
+    ul li {
+      // padding-top: 13px;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 92px;
+      padding-top: 43px;
+      padding-bottom: 40px;
+      &:first-child {
+        padding-left: 456px;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #6d7d7d;
+      text-align: right;
+      font-family: Kanit;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 6.88px;
+    }
   }
 
   &__list {

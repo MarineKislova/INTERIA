@@ -127,8 +127,15 @@ h6 {
           flex: 1 1 auto;
 }
 
+/* ------- header ------- */
 .header {
   background-image: url(../img/header/BG.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 50%;
+  padding-bottom: 68px;
 }
 .header__body {
   display: -webkit-box;
@@ -192,8 +199,247 @@ h6 {
   border: 1px solid #6d7d7d;
   background: rgba(255, 255, 255, 0);
 }
+.header__title h1 {
+  color: #fff;
+  font-family: Kanit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 187px;
+  margin-left: 571px;
+}
+.header__title h3 {
+  color: #fff;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 19px;
+  margin-left: 571px;
+}
+.header__text {
+  color: #fff;
+  font-family: Kanit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 6.88px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  margin-top: 136px;
+}
 
 .container {
   max-width: 1140px;
   margin: 0px auto;
+}
+
+/* ------- about ------- */
+.about {
+  margin-top: 100px;
+}
+.about__title h4 {
+  color: #6d7d7d;
+  font-family: Kanit;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 6.88px;
+}
+.about__title h2 {
+  color: #fff;
+  font-family: Kanit;
+  font-size: 40px;
+  font-weight: 400;
+}
+.about__text {
+  color: #fff;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 19px;
+}
+.about__body {
+  padding-top: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a b c . ." "a b c f g";
+  grid-column-gap: 32px;
+}
+.about__body:nth-child(1) {
+  grid-area: a;
+}
+.about__body:nth-child(2) {
+  grid-area: b;
+}
+.about__body:nth-child(3) {
+  grid-area: c;
+}
+.about__body:nth-child(4) {
+  grid-area: f;
+}
+.about__body:nth-child(5) {
+  grid-area: g;
+}
+.about__img-group3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__img-text {
+  padding-top: 56px;
+  padding-bottom: 35px;
+  color: #fff;
+  font-family: Kanit;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 6.88px;
+}
+.about__img-text span {
+  color: #6d7d7d;
+  font-family: Kanit;
+  font-size: 40px;
+  font-weight: 400;
+}
+.about__img-group4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.about__img-group5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.about__button {
+  margin-top: 240px;
+  border-radius: 100px;
+  border: 1px solid #6d7d7d;
+  background: rgba(255, 255, 255, 0);
+  color: #fff;
+  text-align: center;
+  font-family: Kanit;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 6.88px;
+}
+.about__hireusnow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: last baseline;
+      -ms-flex-align: last baseline;
+          align-items: last baseline;
+  background-image: url(../img/about/Mask_group.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #6d7d7d;
+  border-radius: 50px 50px 0px 50px;
+  margin-top: 100px;
+  padding-top: 61px;
+}
+.about__hireusnow h2 {
+  color: #fff;
+  font-family: Kanit;
+  font-size: 40px;
+  font-weight: 400;
+}
+.about__hireusnow-button {
+  border-radius: 100px;
+  border: 1px solid #6d7d7d;
+  background: rgba(255, 255, 255, 0);
+  color: #fff;
+  text-align: center;
+  font-family: Kanit;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 6.88px;
+  margin-top: 37px;
+  margin-bottom: 76px;
+}
+
+/* ------- team ------- */
+/* ------- footer ------- */
+.footer {
+  background-color: rgb(25, 29, 29);
+}
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__copy {
+  color: #fff;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 46px;
+  padding-bottom: 43px;
+}
+.footer__menu ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 92px;
+  padding-top: 43px;
+  padding-bottom: 40px;
+}
+.footer__menu ul li:first-child {
+  padding-left: 456px;
+}
+.footer__menu a {
+  text-decoration: none;
+  color: #6d7d7d;
+  text-align: right;
+  font-family: Kanit;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 6.88px;
 }/*# sourceMappingURL=style.css.map */
